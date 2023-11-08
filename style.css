@@ -1,0 +1,89 @@
+
+/* component */
+:root {
+    --primary-clr-1: hsl(0, 0%, 100%);
+    --primary-clr-2: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+    --Font-weight-mob: 400;
+    --font-weight-des: 700;
+    --font-size-paragraph: 15px;
+    --mobile-width: 375px;
+    --Desktop-width: 1440px;
+    --Primary-font: 'Outfit', sans-serif;
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-clr-2);
+    height: 100vh;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 12rem;
+    background-color: var(--primary-clr-1);
+    border-radius: 5%;
+}
+
+
+
+
+.qrCode {
+    width: 11rem;
+    border-radius: 5%;
+    margin: 0.5rem 1rem 0 1rem;
+}
+
+.text-container {
+    width: 11rem;
+    text-align: center;
+    margin: 0 1rem 1rem 1rem;
+}
+
+#header-text {
+ font-family: var(--Primary-font);
+ color: var(--Dark-blue);
+ font-size: 15px;
+ font-weight: 700;
+ margin: 0.5rem 0 0.5rem 0;
+}
+
+@media(max-width: 375px) {
+    #header-text {
+        font-size: 11px;
+        font-weight: 400;
+       }
+}
+
+#body-text {
+    font-family: var(--Primary-font);
+    color: var( --Grayish-blue);
+    font-size: 10px;
+    font-weight: 400;
+}
+
+@media(max-width: 375px) {
+    #body-text {
+        font-size: 8px;
+        font-weight: 400;
+       }
+}
+
+
+
+
+
+
